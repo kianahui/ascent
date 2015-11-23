@@ -1,0 +1,23 @@
+.nav-button {
+	text-align: center;
+	color: white;
+	display: block;
+	float: left;
+	width: 33.33333333%;
+	height: 50px;
+	padding-top: 10px;
+	background: transparent;
+}
+
+.glyphicon {
+	color: white;
+}
+
+.gig-posting {
+	border-bottom: 1px solid white;
+	padding: 10px; 
+}
+
+.top-margin {
+	margin-top: 15px;
+}
