@@ -3019,7 +3019,7 @@ select[multiple].input-lg {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  border-radius: 4px;
+  border-radius: 1px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3129,8 +3129,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #35fcf9;
-  border-color: #1cfcf8;
+  background-color: #FF8700;
+  /*border-color: #1cfcf8;*/
 }
 .btn-primary:focus,
 .btn-primary.focus {

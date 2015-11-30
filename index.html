@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
 
@@ -14,6 +14,13 @@
 		display: table-cell;
 		vertical-align: middle;
 	}
+	#title-wrap {
+		display: inline-block;
+	}
+	#enter {
+		display: block;
+		width: 100%;
+	}
 
 	</style>
 </head>
@@ -21,9 +28,13 @@
 <body>
 	<div class="container text-center table">
 		<div id="text-overlay">
-			<h1>Ascent</h1>
-			<p>Do what excites you - <br>we'll help you soar.</p>
-			<a href="interests.html"><button class="btn btn-large btn-primary">I'm in!</button></a>
+			<div id="title-wrap">
+				<h1>Ascent</h1>
+				<hr>
+				<p>Do what excites you - <br>we'll help you soar.</p>
+				<br>
+				<a href="interests.html"><button id="enter" class="btn btn-large btn-primary">I'm in!</button></a>
+			</div>
 		</div>
 	</div>
 
