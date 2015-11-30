@@ -1,80 +1,93 @@
 <html>
 <head>
-	<link rel="stylesheet" href="css/metro-bootstrap.min.css">
-	<link rel="stylesheet" href="css/custom.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<style>
+	#enjoy {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.table {
+		display: table;
+		height: 100%;
+	}
+	.cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.interest-grid {
+		margin: auto;
+		max-width: 250;
+		height: auto;
+	}
+
+	.tile {
+		width: 115px;
+		height: 115px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	</style>
 </head>
 
 <body>
-	<p class="text-right"><a href="listings.html">Do this later >></a></p>
+	<div class="container text-center">
+		<div class="table">
+			<div class="cell">
+				<h2 id="enjoy">What do you enjoy?</h1>
+				<div class="interest-grid">
 
-		<div class="row">
-	<h2 class="text-center">What do you like to do?</h1>
-</div>
-	
-	<div class="interest-grid">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-orange" id="square">
+								<p class="tile-text">code</p>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-magenta">
+								<p class="tile-text">design</p>
+							</div>
+						</div>
+					</div>
 
-<div class="col-xs-6 col-sm-6 col-med-3">
-	<div class="thumbnail tile tile-medium tile-orange">
-		<a href="#" >
-			<h1 class="tile-text">
-				code</h1>
-		</a>
-	</div>
-</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-turquoise">
+								<p class="tile-text">art</p>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-pink">
+								<p class="tile-text">teach</p>
+							</div>
+						</div>
+					</div>
 
-<div class="col-xs-6 col-sm-6 col-med-3">
-	<div class="thumbnail tile tile-medium tile-magenta">
-		<a href="#" >
-			<h1 class="tile-text">
-				design</h1>
-		</a>
-	</div>
-</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-blue">
+								<p class="tile-text">make music</p>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-orange">
+								<p class="tile-text">dance</p>
+							</div>
+						</div>
+					</div>
 
-<div class="col-xs-6 col-sm-6 col-med-3">
-	<div class="thumbnail tile tile-medium tile-turquoise">
-		<a href="#" >
-			<h1 class="tile-text">
-				draw/art</h1>
-		</a>
-	</div>
-</div>
+				</div>
 
-<div class="col-xs-6 col-sm-6 col-med-3">
-	<div class="thumbnail tile tile-medium tile-pink">
-		<a href="#" >
-			<h1 class="tile-text">
-				teach</h1>
-		</a>
-	</div>
-</div>
+				<div class="row text-center">
+					<a href="listings.html"><button class="btn btn-large btn-primary text-center">Give me choices!</button></a>
+				</div>
+			</div><!--/.cell-->
+		</div><!--/.table-->
 
-<div class="col-xs-6 col-sm-6 col-med-3">
-	<div class="thumbnail tile tile-medium tile-blue">
-		<a href="#" >
-			<h1 class="tile-text">
-				make music</h1>
-		</a>
-	</div>
-</div>
-
-<div class="col-xs-6 col-sm-6 col-med-3">
-	<div class="thumbnail tile tile-medium tile-orange">
-		<a href="#" >
-			<h1 class="tile-text">
-				dance</h1>
-		</a>
-	</div>
-</div>
-
-	</div>
-
-	<div class="row text-center">
-	<a href="listings.html"><button class="btn btn-large btn-primary text-center">Give me choices!</button></a>
-</div>
-
-
+	</div><!--/.container-->
 
 </body>
 
