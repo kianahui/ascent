@@ -53,6 +53,10 @@ nav i.glyphicon {
 	margin-top: 15px;
 }
 
+button#home, button#search {
+	border-right: 1px solid #ddd;
+}
+
 
 @media (min-width: 768px) {
 	body {
