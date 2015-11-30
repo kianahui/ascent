@@ -1,49 +1,162 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
 
 	<style>
+	#enjoy {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.table {
+		display: table;
+		height: 100%;
+	}
+	.cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.interest-content {
+		padding: 0px 30px;
+	}
+	.interest-grid {
+		max-width: 250px;
+		height: auto;
+		margin: auto;
+	}
+
+	.tile {
+		width: 100px;
+		height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid #f1f1f1;
+		border-radius: 0px;
+	}
+	.tile-text {
+		font-size: 1.25em;
+		vertical-align: middle;
+	}
+	#other {
+		width: 100%;
+		color: #292929;
+	}
+	#submit {
+		display: block;
+		width: 100%;
+	}
 	button#explore {
 		background-color: #e5e5e5;
+	}
+
+	@media (min-width: 768px) {
+		.tile-text {
+			font-size: 1em;
+		}
+		.tile {
+			width: 125px;
+			height: 125px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.interest-grid {
+			max-width: 350px;
+		}
+		.tile {
+			width: 150px;
+			height: 150px;
+		}
 	}
 	</style>
 </head>
 
 <body>
-	<div class="container">
-		<h1>Explore your interests!</h1>
-		<div class="col-xs-12">
-		    <div class="input-group">
-		      <input type="text" class="form-control" placeholder="Search for...">
-		      <span class="input-group-btn">
-		        <button class="btn btn-default" type="button">Go!</button>
-		      </span>
-		    </div><!-- /input-group -->
-	  	</div><!-- /.col-lg-6 -->
-	</div>
+	<div class="container text-center">
+		<div class="table">
+			<div class="cell interest-content">
+				<h2 id="enjoy">What do you enjoy?</h1>
 
-	<nav class="navbar-fixed-bottom" role="navigation">
-		<a href="listings.html" id="menu">
-			<button id="home" type="button" class="nav-button btn btn-large" aria-hidden="true">
-				<i class="glyphicon glyphicon-menu-hamburger"></i>
-			</button>
-		</a>
-		<a href="search.html" id="search">
-			<button id="explore" type="button" class="nav-button btn btn-large" aria-hidden="true">
-				<i class="glyphicon glyphicon-search"></i>
-			</button>
-		</a>
-		<a href="user.html" id="profile">
-			<button type="button" class="nav-button btn btn-large" aria-hidden="true">
-				<i class="glyphicon glyphicon-user"></i>
-			</button>
-		</a>
-	</nav>
+				<div class="interest-grid">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="thumbnail tile">
+								<div class="table" id="tile-html">
+									<p class="cell tile-text">html</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-magenta">
+								<div class="table">
+									<p class="cell tile-text">design</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-turquoise">
+								<div class="table">
+									<p class="cell tile-text">drawing</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-pink">
+								<div class="table">
+									<p class="cell tile-text">teaching</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-blue">
+								<div class="table">
+									<p class="cell tile-text">music</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="thumbnail tile tile-orange">
+								<div class="table">
+									<p class="cell tile-text">dance</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>Interests not listed? Add them in!</p>
+					<input id="other" type="text" placeholder="Separate multiple with commas"><br><br>
+					<a href="listings.html"><button id="submit" class="btn btn-large btn-primary">Done</button></a>
+				</div>
+				<br>
+			</div><!--/.cell-->
+		</div><!--/.table-->
 
-	<script language="javascript" type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
+		<nav class="navbar-fixed-bottom" role="navigation">
+			<a href="listings.html" id="menu">
+				<button id="home" type="button" class="nav-button btn btn-large" aria-hidden="true">
+					<i class="glyphicon glyphicon-menu-hamburger"></i>
+				</button>
+			</a>
+			<a href="search.html" id="search">
+				<button id="explore" type="button" class="nav-button btn btn-large" aria-hidden="true">
+					<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</a>
+			<a href="user.html" id="profile">
+				<button type="button" class="nav-button btn btn-large" aria-hidden="true">
+					<i class="glyphicon glyphicon-user"></i>
+				</button>
+			</a>
+		</nav>
+
+	</div><!--/.container-->
+
 </body>
 
 </html>
+
