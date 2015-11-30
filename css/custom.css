@@ -1,3 +1,14 @@
+body {
+	line-height: 1.75em;
+	font-size: 1.5em;
+	color: #f1f1f1;
+	background-color: #373737;
+}
+
+h1 {
+	font-size: 3em;
+}
+
 .nav-button {
 	text-align: center;
 	color: white;
@@ -20,4 +31,36 @@
 
 .top-margin {
 	margin-top: 15px;
+}
+
+
+@media (min-width: 768px) {
+	body {
+		font-size: 1.75em;
+		line-height: 1.8em;
+	}
+	h1 {
+		font-size: 3.25em;
+	}
+
+}
+
+@media (min-width: 992px) {
+	body {
+		font-size: 2em;
+		line-height: 1.8em;
+	}
+	h1 {
+		font-size: 3.75em;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		font-size: 2.5em;
+		line-height: 2em;
+	}
+	h1 {
+		font-size: 3.5em;
+	}
 }
