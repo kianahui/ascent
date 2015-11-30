@@ -11,6 +11,10 @@ h1 {
 	font-size: 3em;
 }
 
+h2 {
+	font-size: 1.8em;
+}
+
 hr {
 	border-color: #606583;
 }
@@ -52,11 +56,14 @@ nav i.glyphicon {
 
 @media (min-width: 768px) {
 	body {
-		font-size: 1.75em;
+		font-size: 1.5em;
 		line-height: 1.8em;
 	}
 	h1 {
 		font-size: 3.25em;
+	}
+	h2 {
+		font-size: 1.75em;
 	}
 	nav {
 		padding: 10px;
@@ -70,6 +77,9 @@ nav i.glyphicon {
 	}
 	h1 {
 		font-size: 3.75em;
+	}
+	h2 {
+		font-size: 1.25em;
 	}
 }
 
