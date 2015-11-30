@@ -18,19 +18,52 @@
 		display: table-cell;
 		vertical-align: middle;
 	}
+	.interest-content {
+		padding: 0px 30px;
+	}
 	.interest-grid {
-		margin: auto;
-		max-width: 250;
+		max-width: 250px;
 		height: auto;
+		margin: auto;
 	}
 
 	.tile {
-		width: 115px;
-		height: 115px;
+		width: 100px;
+		height: 100px;
 		margin-left: auto;
 		margin-right: auto;
 		border: 2px solid #f1f1f1;
 		border-radius: 0px;
+	}
+	.tile-text {
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+	#other {
+		width: 100%;
+	}
+	#submit {
+		display: block;
+		width: 100%;
+	}
+
+	@media (min-width: 768px) {
+		.tile-text {
+			font-size: 1.2em;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.interest-grid {
+			max-width: 350px;
+		}
+		.tile {
+			width: 150px;
+			height: 150px;
+		}
+		.tile-text {
+			font-size: 1em;
+		}
 	}
 	</style>
 </head>
@@ -38,54 +71,63 @@
 <body>
 	<div class="container text-center">
 		<div class="table">
-			<div class="cell">
+			<div class="cell interest-content">
 				<h2 id="enjoy">What do you enjoy?</h1>
-				<div class="interest-grid">
 
+				<div class="interest-grid">
 					<div class="row">
 						<div class="col-xs-6">
 							<div class="thumbnail tile tile-orange" id="square">
-								<p class="tile-text">code</p>
+								<div class="table">
+									<p class="cell tile-text">html</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-6">
 							<div class="thumbnail tile tile-magenta">
-								<p class="tile-text">design</p>
+								<div class="table">
+									<p class="cell tile-text">design</p>
+								</div>
 							</div>
 						</div>
 					</div>
-
 					<div class="row">
 						<div class="col-xs-6">
 							<div class="thumbnail tile tile-turquoise">
-								<p class="tile-text">art</p>
+								<div class="table">
+									<p class="cell tile-text">drawing</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-6">
 							<div class="thumbnail tile tile-pink">
-								<p class="tile-text">teach</p>
+								<div class="table">
+									<p class="cell tile-text">teaching</p>
+								</div>
 							</div>
 						</div>
 					</div>
-
 					<div class="row">
 						<div class="col-xs-6">
 							<div class="thumbnail tile tile-blue">
-								<p class="tile-text">make music</p>
+								<div class="table">
+									<p class="cell tile-text">music</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-6">
 							<div class="thumbnail tile tile-orange">
-								<p class="tile-text">dance</p>
+								<div class="table">
+									<p class="cell tile-text">dance</p>
+								</div>
 							</div>
 						</div>
 					</div>
-
+					<p>Interests not listed? Add them in!</p>
+					<input id="other" type="text" placeholder="Separate multiple with commas"><br><br>
+					<a href="listings.html"><button id="submit" class="btn btn-large btn-primary">Submit</button></a>
 				</div>
-
-				<div class="row text-center">
-					<a href="listings.html"><button class="btn btn-large btn-primary text-center">Give me choices!</button></a>
-				</div>
+				<br>
 			</div><!--/.cell-->
 		</div><!--/.table-->
 
