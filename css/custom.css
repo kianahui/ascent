@@ -4,7 +4,7 @@ body {
 	font-weight: 200;
 	letter-spacing: 0.5px;
 	color: #e7e7e7;
-	background-color: #242631; /*dark slate navy*/
+	background-color: #242631;
 }
 
 h1 {
@@ -13,6 +13,16 @@ h1 {
 
 hr {
 	border-color: #795D3E;
+}
+
+nav {
+	background-color: #f1f1f1;
+	border-top: 1px solid #e0e0e0;
+}
+
+nav i.glyphicon {
+	color: #1A1A28;
+	font-size: 1.3em;
 }
 
 .nav-button {
@@ -48,7 +58,9 @@ hr {
 	h1 {
 		font-size: 3.25em;
 	}
-
+	nav {
+		padding: 10px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -68,5 +80,8 @@ hr {
 	}
 	h1 {
 		font-size: 3.5em;
+	}
+	nav {
+		padding: 25px;
 	}
 }
