@@ -1,11 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
 
-@font-face {
+
+/*@font-face {
     font-family: 'TexGyreAdventor';
     src: url('../fonts/texgyreadventor-regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 body {
 	line-height: 1.75em;
@@ -14,9 +15,9 @@ body {
 	letter-spacing: 0.5px;
 	color: #e7e7e7;
 	background-color: #242631;
-/*	font-family: 'Raleway', sans-serif;*/
-	font-family: 'TexGyreAdventor', 'Century Gothic', sans-serif;
-}
+	font-family: 'Nunito', 'Century Gothic', sans-serif;
+/*	font-family: 'TexGyreAdventor', 'Century Gothic', sans-serif;
+*/}
 
 h1, h2, h3, h4 {
 	font-family: 'Oswald', Impact, sans-serif;
