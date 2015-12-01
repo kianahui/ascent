@@ -27,7 +27,9 @@ h1 {
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 2.25em;
+	line-height: 1.35em;
+	text-transform: uppercase;
 }
 
 hr {
@@ -114,64 +116,6 @@ button#home, button#search {
 }
 
 
-/*CHECKBOX EFFECT*/
-
-/*@-webkit-keyframes check {
-	0% {
-		height: 0;
-		width: 0;
-	}
-	25% {
-		height: 0;
-		width: 10px;
-	}
-	50% {
-		height: 20px;
-		width: 10px;
-	}
-}
-@-moz-keyframes check {
-	0% {
-		height: 0;
-		width: 0;
-	}
-	25% {
-		height: 0;
-		width: 10px;
-	}
-	50% {
-		height: 20px;
-		width: 10px;
-	}
-}
-@-ms-keyframes check {
-	0% {
-		height: 0;
-		width: 0;
-	}
-	25% {
-		height: 0;
-		width: 10px;
-	}
-	50% {
-		height: 20px;
-		width: 10px;
-	}
-}
-@keyframes check {
-	0% {
-		height: 0;
-		width: 0;
-	}
-	25% {
-		height: 0;
-		width: 10px;
-	}
-	50% {
-		height: 20px;
-		width: 10px;
-	}
-}*/
 
 
 
@@ -199,41 +143,12 @@ button#home, button#search {
 	top: 0;
 }
 
-/*.checkbox label:after {
-  -moz-transform: scaleX(-1) rotate(135deg);
-  -ms-transform: scaleX(-1) rotate(135deg);
-  -webkit-transform: scaleX(-1) rotate(135deg);
-  transform: scaleX(-1) rotate(135deg);
 
-  -moz-transform-origin: left top;
-  -ms-transform-origin: left top;
-  -webkit-transform-origin: left top;
-  transform-origin: left top;
-  border-right: 7px solid #cee;
-  border-top: 7px solid #cee;
-  content: '';
-  display: block;
-  height: 40px;
-  left: 40%;
-  position: absolute;
-  top: 50px;
-  width: 20px;
-}
-.checkbox label:hover:after {
-	border-color: #bdd;
-}
-.checkbox input {
-	display: none;
-}
-.checkbox input:checked + label:after {
-	-webkit-animation: check 0.8s;
-	-moz-animation: check 0.8s;
-	-o-animation: check 0.8s;
-	animation: check 0.8s;
-	border-color: #5cb85c;
-}
-*/
 
+/* =========================================
+ *  MEDIA QUERIES HAVE TO BE AT THE BOTTOM 
+ * =========================================
+ */
 
 /* iPhone 6 */
 @media (min-width: 375px) {
@@ -251,9 +166,6 @@ button#home, button#search {
 	h1 {
 		font-size: 3.25em;
 	}
-	h2 {
-		font-size: 1.75em;
-	}
 	.checkbox {
 		width: 175px;
 		height: 175px;
@@ -266,9 +178,6 @@ button#home, button#search {
 	}
 	h1 {
 		font-size: 3.75em;
-	}
-	h2 {
-		font-size: 1.25em;
 	}
 }
 
