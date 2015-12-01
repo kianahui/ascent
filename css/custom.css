@@ -5,10 +5,11 @@ body {
 	letter-spacing: 0.5px;
 	color: #e7e7e7;
 	background-color: #242631;
+	font-family: 'Oswald', Impact, sans-serif;
 }
 
 body, h1, h2, h3, h4 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', Impact, sans-serif;
 }
 
 h1 {
