@@ -24,7 +24,7 @@
 		height: 100%;
 	}
 	.cell {
-		display: table-cell;
+/*		display: table-cell;*/
 		vertical-align: middle;
 	}
 	#interest-content {
@@ -35,7 +35,7 @@
 		margin: auto;
 	}
 
-	.tile {
+/*	.tile {
 		width: 125px;
 		height: 125px;
 		margin: 0px 5px;
@@ -43,6 +43,19 @@
 		border-radius: 0px;
 		display: inline-block;
 	}
+
+
+	.tile:hover {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.tile:after {
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+	*/
 	.tile-text {
 		font-size: 1.25em;
 		vertical-align: middle;
@@ -57,7 +70,7 @@
 	}
 
 	@media (min-width: 375px) {
-		.tile {
+		.checkbox, .checkbox label {
 			width: 160px;
 			height: 160px;
 		}
@@ -67,14 +80,14 @@
 		.tile-text {
 			font-size: 1em;
 		}
-		.tile {
+		.checkbox, .checkbox label {
 			width: 175px;
 			height: 175px;
 		}
 	}
 
 	@media (min-width: 1200px) {
-		.tile {
+		.checkbox, .checkbox label {
 			width: 200px;
 			height: 200px;
 		}
@@ -85,46 +98,52 @@
 <body>
 	<div class="container text-center">
 		<div id="interest-content">
-			<h2 id="engage">Engage your interests</h2>
+			<h2 id="engage">Ignite your Interests</h2>
 			<p>Help us learn more about the cool person that you are to get you opportunities best suited for you.</p>
 			<br>
 			<div class="interest-grid">
 				<div class="row">
-					<div class="tile">
-						<div class="table" id="tile-html">
-							<h3 class="cell tile-text">html</h3>
-						</div>
+					<div class="checkbox" id="tile-html">
+						<h3 class="cell tile-text">html</h3>
+						<input type="checkbox" id="cb" name="cb" />
+						<label for="cb"></label>
 					</div>
-					<div class="tile tile-magenta">
-						<div class="table">
-							<h3 class="cell tile-text">design</h3>
-						</div>
+					<div class="checkbox" id="tile-magenta">
+						<h3 class="cell tile-text">design</h3>
+						<input type="checkbox" id="cb2" name="cb2" />
+						<label for="cb2"></label>
 					</div>
 				</div>
+
 				<div class="row">
-					<div class="tile tile-turquoise">
-						<div class="table">
-							<h3 class="cell tile-text">drawing</h3>
-						</div>
+					<div class="checkbox" id="tile-turquoise">
+						<h3 class="cell tile-text">design</h3>
+						<input type="checkbox" id="cb3" name="cb3" />
+						<label for="cb3"></label>
 					</div>
-					<div class="tile tile-pink">
-						<div class="table">
-							<h3 class="cell tile-text">teaching</h3>
-						</div>
+
+					<div class="checkbox" id="tile-pink">
+						<h3 class="cell tile-text">teaching</h3>
+						<input type="checkbox" id="cb4" name="cb4" />
+						<label for="cb4"></label>
 					</div>
 				</div>
+
 				<div class="row">
-					<div class="tile tile-blue">
-						<div class="table">
-							<h3 class="cell tile-text">music</h3>
-						</div>
+					<div class="checkbox" id="tile-blue">
+						<h3 class="cell tile-text">music</h3>
+						<input type="checkbox" id="cb5" name="cb5" />
+						<label for="cb5"></label>
 					</div>
-					<div class="tile tile-orange">
-						<div class="table">
-							<h3 class="cell tile-text">dance</h3>
-						</div>
+
+					<div class="checkbox" id="tile-orange">
+						<h3 class="cell tile-text">dance</h3>
+						<input type="checkbox" id="cb6" name="cb6" />
+						<label for="cb6"></label>
 					</div>
 				</div>
+
+
 				<p>Interests not listed? Add them in!</p>
 				<input id="other" type="text" placeholder="Separate multiple with commas"><br><br>
 				<a href="listings.html"><button id="submit" class="btn btn-large btn-primary">Submit</button></a>

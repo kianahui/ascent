@@ -10,22 +10,42 @@
 	button#home {
 		background-color: #e5e5e5;
 	}
+
+	#extra-info {
+		background-color: yellow;
+		padding: 10px;
+	}
+	
 	</style>
 
 </head>
 
-<body>
+<body onload="setDivs()">
 	<div class="container">
-		<h1>Activities You Might Like</h1>
+		<h1>Engage in Opportunities.</h1>
 		<div class="gig-posting">
-			<h3>Design a website</h3>
-			<p>Nonprofit dance4life is looking for eager individual to create an online platform.<br>Payment based on experience.</p>
-			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">I'm interested!</button>
+			<div onclick="$('#content-1').toggle(400);">
+			<img src="http://icenineonline.com/wp-content/uploads/2015/09/Responsive-Design.jpg" style="width: 100%">
+						<div id="extra-info" class="small" role="alert"></div>
+			<div class="gig-text">
+			<h3 class="">Design a website</h3>
+			<p class="">Nonprofit dance4life is looking for eager individual to create an online platform.</p>
+		</div>
+	</div>
+			<div id="content-1" class="gig-text">
+				<strong>Payment:</strong> Based on experience<br>
+				<strong>Time Commitment:</strong> 20 hours<br>
+				<div class="text-right">
+<!-- 			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">I'm interested!</button> -->
+			<button class="btn btn-primary interested top-margin">Interested</button>
+			<button class="btn btn-primary action top-margin">Request</button>
+								</div>
+			</div>
 		</div>
 
 
 		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  	<div class="modal-dialog" role="document">
 		    	<div class="modal-content">
 		      		<div class="modal-header">
@@ -42,7 +62,7 @@
 		      		</div>
 		    	</div>
 		  	</div>
-		</div>
+		</div> -->
 
 
 		<div class="gig-posting">
@@ -78,7 +98,9 @@
 		</a>
 	</nav>
 
+
 	<script language="javascript" type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/custom.js"></script>
 	<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
