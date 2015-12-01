@@ -34,15 +34,6 @@ hr {
 	border-color: #606583;
 }
 
-nav {
-	background-color: #f1f1f1;
-	border-top: 1px solid #e0e0e0;
-}
-
-nav i.glyphicon {
-	color: #1A1A28;
-	font-size: 1.3em;
-}
 
 
 /* ===========================
@@ -63,22 +54,44 @@ nav i.glyphicon {
 
 
 
+/* =====================
+ *   MOBILE NAV BAR 
+ * =====================
+ */
+ nav {
+	background-color: #f1f1f1;
+	border-top: 1px solid #e0e0e0;
+}
+
+/*.glyphicon {
+	color: #f1f1f1;
+}*/
+
+nav i.glyphicon {
+	color: #1A1A28;
+	font-size: 1.3em;
+}
 
 .nav-button {
 	text-align: center;
-	color: white;
-	display: block;
+	color: #f1f1f1;
+	display: inline-block;
 	float: left;
 	width: 33.33333333%;
-	height: 50px;
-	padding-top: 10px;
+	height: 3.5em;
+	padding: 0.5em;
 	background: transparent;
 }
 
-.glyphicon {
-	color: white;
+button#home, button#search {
+	border-right: 1px solid #ddd;
 }
 
+
+/* =======================
+ *   GIG LISTING PAGE
+ * =======================
+ */
 .gig-posting {
 	background-color: #434654;
 	margin-bottom: 10px;
@@ -92,9 +105,6 @@ nav i.glyphicon {
 	margin-top: 20px;
 }
 
-button#home, button#search {
-	border-right: 1px solid #ddd;
-}
 
 
 
@@ -244,9 +254,6 @@ button#home, button#search {
 	h2 {
 		font-size: 1.75em;
 	}
-	nav {
-		padding: 10px;
-	}
 	.checkbox {
 		width: 175px;
 		height: 175px;
@@ -272,9 +279,6 @@ button#home, button#search {
 	}
 	h1 {
 		font-size: 3.5em;
-	}
-	nav {
-		padding: 25px;
 	}
 	.checkbox {
 		width: 200px;
