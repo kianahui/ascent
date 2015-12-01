@@ -155,8 +155,8 @@ button#home, button#search {
  * ===============================
  */
 .checkbox {
-	width: 125px;
-	height: 125px;
+	width: 10em;
+	height: 10em;
 	margin: 0 0.5em;
 	border: 2px solid #f1f1f1;
 	border-radius: 0px;
@@ -186,20 +186,12 @@ button#home, button#search {
 	body {
 		font-size: 1.5em;
 	}
-	.checkbox {
-		width: 150px;
-		height: 150px;
-	}
 }
 
 
 @media (min-width: 768px) {
 	h1 {
 		font-size: 3.25em;
-	}
-	.checkbox {
-		width: 175px;
-		height: 175px;
 	}
 }
 
@@ -219,10 +211,6 @@ button#home, button#search {
 	}
 	h1 {
 		font-size: 3.5em;
-	}
-	.checkbox {
-		width: 200px;
-		height: 200px;
 	}
 }
 
