@@ -157,7 +157,7 @@ button#home, button#search {
 .checkbox {
 	width: 125px;
 	height: 125px;
-	margin: 0px 5px;
+	margin: 0 0.5em;
 	border: 2px solid #f1f1f1;
 	border-radius: 0px;
 	display: inline-block;
