@@ -18,39 +18,33 @@
 		font-size: 1.5em;
 		line-height: 1.75em;
 	}
-	.table {
-		display: table;
-		height: 100%;
-	}
-	#text-overlay {
-		display: table-cell;
-		vertical-align: middle;
-	}
-	#title-wrap {
-		display: inline-block;
+	#toInterests {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 	}
 	#enter {
-		display: block;
 		width: 100%;
+		padding: 1.5em 0;
 	}
 
 	</style>
 </head>
 
 <body>
-	<div class="container text-center table">
-		<div id="text-overlay">
+	<div class="text-center table">
+		<div class="cell">
 			<div id="title-wrap">
 				<h1 id="ascent">Ascent</h1>
-				<p id="description">a hub of opportunities.</p>
+				<p id="description">A hub of opportunities.</p>
 				<hr>
-				<h2 id="slogan">We connect.<br>You decide.</h2>
+				<h2 id="slogan">We connect. You decide.</h2>
 				<br>
-				<a href="interests.html"><button id="enter" class="btn btn-large btn-primary">OK, let's go!</button></a>
 			</div>
+			<a id="toInterests" href="interests.html"><button id="enter" class="btn btn-large btn-primary">OK, let's go!</button></a>
 		</div>
 	</div>
-
 </body>
 
 </html>

@@ -44,6 +44,26 @@ nav i.glyphicon {
 	font-size: 1.3em;
 }
 
+
+/* ===========================
+ *   GENERAL CUSTOM STYLING
+ * ===========================
+ */
+.table {
+	display: table;
+	height: 100%;
+	margin-bottom: 0;
+}
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+
+
+
 .nav-button {
 	text-align: center;
 	color: white;
