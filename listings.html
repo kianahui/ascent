@@ -10,11 +10,6 @@
 	button#home {
 		background-color: #e5e5e5;
 	}
-
-	#extra-info {
-		background-color: yellow;
-		padding: 10px;
-	}
 	
 	.container {
 		padding-bottom: 4.5em;
@@ -26,69 +21,47 @@
 <body onload="setDivs()">
 	<div class="container">
 		<div class="navbar-fixed-top white-bkgrd">
-			<h2>Engage <span>in Opportunities.</span></h2>
+			<h4>Ascent<!--<span>in Opportunities.</span>--></h4>
 		</div>
 		<div class="gigs">
 			<div class="gig-posting">
-				<div class="pink-bkgrd" onclick="$('#content-1').toggle(400);">
-					<img src="http://icenineonline.com/wp-content/uploads/2015/09/Responsive-Design.jpg" style="width: 100%">
-					<div id="extra-info" class="small" role="alert"></div>
-					<h3 class="gig-title">Design a website</h3>
+				<div class="navy-bkgrd pointer" onclick="$('#content-1').toggle(300);">
+					<img src="img/hands-laptop.jpg" style="width: 100%">
 					<div class="gig-text">
-						<hr>
-						<p>Nonprofit dance4life is looking for an eager individual to help them create an online site.</p>
+						<h3 class="gig-title">Design a Website</h3>
+						<h5><a class="company" href="https://www.dance4life.com">dance4life</a> | Nonprofit</h5>
+						<p>We're looking for an eager individual to help us create an online site.</p>
 					</div>
 				</div>
-				<div id="content-1" class="gig-text pink-bkgrd">
-					<strong>Payment:</strong> Based on experience<br>
-					<strong>Time Commitment:</strong> 20 hours<br>
-					<div class="text-right">
-	<!-- 			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">I'm interested!</button> -->
-						<button class="btn btn-primary interested top-margin">Interested</button>
-						<button class="btn btn-primary action top-margin">Request</button>
+				<div id="content-1" class="navy-bkgrd">
+					<div class="gig-text">
+						<strong>Compensation:</strong> TBD<br>
+						<strong>Time:</strong> 20 hours<br>
+					</div>
+					<div class="button-wrapper text-center">
+						<button class="btn btn-primary interested">Interested</button>
+						<button class="btn btn-primary action" data-toggle="modal" data-target="#myModal">Contact Now</button>
 					</div>
 				</div>
 			</div><!--/.gig-posting-->
 
-
-			<!-- Modal -->
-	<!-- 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  	<div class="modal-dialog" role="document">
-			    	<div class="modal-content">
-			      		<div class="modal-header">
-			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        		<h4 class="modal-title" id="myModalLabel">Activity saved!</h4>
-			      		</div>
-			      		<div class="modal-body" style="color: #2d2d2d">
-			        		<h3 class="text-center">Activity saved!</h3>
-			        		<p class="text-center">Start completing your activities by going to your activity list.</p>
-			      		</div>
-			      		<div class="modal-footer">
-			        		<button type="button" class="btn btn-success" data-dismiss="modal">View List</button>
-			        		<button type="button" class="btn btn-primary">Later</button>
-			      		</div>
-			    	</div>
-			  	</div>
-			</div> -->
-
-
 			<div class="gig-posting">
-				<div onclick="$('#content-2').toggle(400);">
-					<img src="http://icenineonline.com/wp-content/uploads/2015/09/Responsive-Design.jpg" style="width: 100%">
-					<div id="extra-info" class="small" role="alert"></div>
+				<div class="seafoam-bkgrd pointer" onclick="$('#content-2').toggle(400);">
+					<img src="img/guitarGig.jpg" style="width: 100%">
 					<div class="gig-text">
-						<h3 class="gig-title">Cafe Music Gig</h3>
-						<p>Coffee shop looking for ambient music/band to play for an hour. Free coffee and meal provided!</p>
+						<h3 class="gig-title">Music Gig</h3>
+						<h5><a class="company" href="http://www.thegrovesf.com/">The Grove</a> | Coffee Shop</h5>
+						<p>Play music? Keep our cafe lively with some background jams. Coffee and meal on us!</p>
 					</div>
 				</div>
-
-				<div id="content-2" class="gig-text">
-					<strong>Payment:</strong> $x<br>
-					<strong>Time Commitment:</strong> x hours<br>
-					<div class="text-right">
-	<!-- 			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">I'm interested!</button> -->
-						<button class="btn btn-primary interested top-margin">Interested</button>
-						<button class="btn btn-primary action top-margin">Request</button>
+				<div id="content-2" class="seafoam-bkgrd">
+					<div class="gig-text">
+						<strong>Compensation:</strong> TBD<br>
+						<strong>Time:</strong> 1-2 hours<br>
+					</div>
+					<div class="button-wrapper text-center">
+						<button class="btn btn-primary interested">Interested</button>
+						<button class="btn btn-primary action" data-toggle="modal" data-target="#myModal">Contact Now</button>
 					</div>
 				</div>
 			</div>
@@ -100,8 +73,30 @@
 					<button class="btn btn-primary">I'm interested!</button>
 				</div>
 			</div>
+
 		</div>
 	</div>
+
+
+				<!-- Modal 1 -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      	<div class="modal-header">
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        	<h6 class="modal-title" id="myModalLabel">Modal title</h6>
+				      	</div>
+				      	<div class="modal-body">
+				        	...
+				      	</div>
+				      	<div class="modal-footer">
+				        	<button type="button" class="btn btn-primary" id="send" data-dismiss="modal">Send</button>
+				      	</div>
+				    </div>
+				</div>
+			</div>
+
+	
 
 	<nav class="navbar-fixed-bottom white-bkgrd" role="navigation">
 		<a href="listings.html" id="menu">

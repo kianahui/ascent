@@ -3,12 +3,22 @@ $(this).text('Saved');
 	$(this).addClass('disabled');
 });
 
-$('.action').click(function(){
-	$(this).text('Requested');
-	$(this).addClass('disabled');
-	$('#extra-info').text("We have contacted the nonprofit with your information. You should be contacted shortly!");
-			$('#extra-info').show(400);
+
+/* ==============================
+ *  Requested Alert for Listings 
+ * ==============================
+ */
+$('.action').click(function() {
+	var contact = this;
+	$('#send').click(function() {
+		$(contact).text('Contacted!');
+		contact.style.backgroundColor = '#797979';
+		contact.removeAttribute("data-toggle");
+	});
 });
+
+
+
 
 $('#basic-info-tab').on('click', function(e) {
 	$('.nav> li').removeClass('active');
@@ -25,7 +35,7 @@ $('#saved-tab').on('click', function(e) {
 });    
 
 $('#history-tab').on('click', function(e) {
-	$('.nav> li').removeClass('active');
+	$('.nav > li').removeClass('active');
 	$(this).addClass('active');
 	$('#history').show(400);
 	$('#basic-info').hide();
@@ -38,6 +48,6 @@ function setPages(){
 	$('#history').hide();
 };
 
-function setDivs() {
-	$('#extra-info').hide();
-}
+/*function setDivs() {
+	$('.extra-info').hide();
+}*/
