@@ -1,163 +1,115 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+
 
 	<style>
-	#enjoy {
-		margin-top: 30px;
-		margin-bottom: 30px;
+	h2 {
+		margin-bottom: 1em;
 	}
-	.table {
-		display: table;
-		height: 100%;
-	}
-	.cell {
-		display: table-cell;
-		vertical-align: middle;
-	}
-	.interest-content {
-		padding: 0px 30px;
-	}
-	.interest-grid {
-		max-width: 250px;
-		height: auto;
-		margin: auto;
+	#interest-content {
+		padding-top: 0.5em;
+		padding-bottom: 2em;
 	}
 
-	.tile {
-		width: 100px;
-		height: 100px;
-		margin-left: auto;
-		margin-right: auto;
-		border: 2px solid #f1f1f1;
-		border-radius: 0px;
+	p#description, .row {
+		padding-bottom: 1em;
 	}
-	.tile-text {
-		font-size: 1.25em;
-		vertical-align: middle;
+
+	.interest-grid {
+		height: auto;
+		margin: auto;
 	}
 	#other {
 		width: 100%;
 		color: #292929;
+		font-size: 1em;
 	}
-	#submit {
-		display: block;
-		width: 100%;
-	}
-	button#explore {
-		background-color: #e5e5e5;
-	}
+
 
 	@media (min-width: 768px) {
-		.tile-text {
-			font-size: 1em;
-		}
-		.tile {
-			width: 125px;
-			height: 125px;
-		}
 	}
 
-	@media (min-width: 1200px) {
-		.interest-grid {
-			max-width: 350px;
-		}
-		.tile {
-			width: 150px;
-			height: 150px;
-		}
-	}
 	</style>
 </head>
 
 <body>
 	<div class="container text-center">
-		<div class="table">
-			<div class="cell interest-content">
-				<h2 id="enjoy">What do you enjoy?</h1>
-
+		<section id="interest-content">
+			<!--<h2>Ignite<span> your Interests.</span></h2>-->
+			<br>
+			<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
 				<div class="interest-grid">
 					<div class="row">
-						<div class="col-xs-6">
-							<div class="thumbnail tile">
-								<div class="table" id="tile-html">
-									<p class="cell tile-text">html</p>
-								</div>
+						<div class="checkbox seafoam-bkgrd">
+							<div class="table">
+								<h3 class="cell">html</h3>
 							</div>
+							<input id="cb1" name="cb6" type="checkbox">
+							<label for="cb1"></label>
 						</div>
-						<div class="col-xs-6">
-							<div class="thumbnail tile tile-magenta">
-								<div class="table">
-									<p class="cell tile-text">design</p>
-								</div>
+						<div class="checkbox blue-bkgrd">
+							<div class="table">
+								<h3 class="cell">design</h3>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6">
-							<div class="thumbnail tile tile-turquoise">
-								<div class="table">
-									<p class="cell tile-text">drawing</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<div class="thumbnail tile tile-pink">
-								<div class="table">
-									<p class="cell tile-text">teaching</p>
-								</div>
-							</div>
+							<input type="checkbox" id="cb2" name="cb2" />
+							<label for="cb2"></label>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-6">
-							<div class="thumbnail tile tile-blue">
-								<div class="table">
-									<p class="cell tile-text">music</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<div class="thumbnail tile tile-orange">
-								<div class="table">
-									<p class="cell tile-text">dance</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<p>Interests not listed? Add them in!</p>
-					<input id="other" type="text" placeholder="Separate multiple with commas"><br><br>
-					<a href="listings.html"><button id="submit" class="btn btn-large btn-primary">Done</button></a>
-				</div>
-				<br>
-			</div><!--/.cell-->
-		</div><!--/.table-->
 
-		<nav class="navbar-fixed-bottom" role="navigation">
-			<a href="listings.html" id="menu">
-				<button id="home" type="button" class="nav-button btn btn-large" aria-hidden="true">
-					<i class="glyphicon glyphicon-menu-hamburger"></i>
-				</button>
-			</a>
-			<a href="search.html" id="search">
-				<button id="explore" type="button" class="nav-button btn btn-large" aria-hidden="true">
-					<i class="glyphicon glyphicon-search"></i>
-				</button>
-			</a>
-			<a href="user.html" id="profile">
-				<button type="button" class="nav-button btn btn-large" aria-hidden="true">
-					<i class="glyphicon glyphicon-user"></i>
-				</button>
-			</a>
-		</nav>
+					<div class="row">
+						<div class="checkbox yellow-bkgrd">
+							<div class="table">
+								<h3 class="cell">drawing</h3>
+							</div>
+								<input type="checkbox" id="cb3" name="cb3" />
+								<label for="cb3"></label>
+						</div>
+
+						<div class="checkbox orange-bkgrd">
+							<div class="table">
+								<h3 class="cell">teaching</h3>
+							</div>
+							<input type="checkbox" id="cb4" name="cb4" />
+							<label for="cb4"></label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="checkbox blue-bkgrd">
+							<div class="table">
+								<h3 class="cell">music</h3>
+							</div>
+							<input type="checkbox" id="cb5" name="cb5" />
+							<label for="cb5"></label>
+						</div>
+
+						<div class="checkbox seafoam-bkgrd">
+							<div class="table">
+								<h3 class="cell">dance</h3>
+							</div>
+							<input type="checkbox" id="cb6" name="cb6" />
+							<label for="cb6"></label>
+						</div>
+					</div>
+
+
+					<p>Interests not listed? Let us know!</p>
+					<input id="other" type="text" placeholder="Separate multiple with commas">
+				</div><!--/.interest-grid-->
+			</form>
+		</section>
 
 	</div><!--/.container-->
+
+	<script src="js/svgcheckbx.js"></script>
 
 </body>
 
 </html>
-
