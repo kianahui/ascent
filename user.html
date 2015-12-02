@@ -1,7 +1,6 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
 
@@ -13,42 +12,40 @@
 </head>
 
 <body onload="setPages()">
-	<div class="text-center">
-		<h1>Joe Schmoe</h1>
+	<div class="navbar-fixed-top white-bkgrd text-center">
+		<h4 class="nav-title">User.name</h4>
 	</div>
 
+	<div class="page-content">
 		<ul class="nav nav-tabs">
-  <li role="presentation" id="basic-info-tab" class="active"><a href="#">Basic Info</a></li>
-  <li role="presentation" id="saved-tab"><a href="#">Saved</a></li>
-  <li role="presentation" id="history-tab"><a href="#">History</a></li>
-</ul>
+		  	<li role="presentation" id="basic-info-tab" class="active"><a href="#">Basic Info</a></li>
+		  	<li role="presentation" id="saved-tab"><a href="#">Saved</a></li>
+		  	<li role="presentation" id="history-tab"><a href="#">History</a></li>
+		</ul>
 
+		<div class="container">
+			<div id="basic-info">
+				<p>
+					Name<br>
+					E-mail<br>
+					Education</br>
+				</p>
+			</div>
 
-<div class="container">
-	<div id="basic-info">
-		<p>
-			Name<br>
-			E-mail<br>
-			Education</br>
-		</p>
-	</div>
-
-		<div id="saved">
-		<p>
-			Interests
-		</p>
-	</div>
+			<div id="saved">
+				<p>Interests</p>
+			</div>
 
 			<div id="history">
-		<p>
-			History
-		</p>
-	</div>
+				<p>History</p>
+			</div>
 
-<div>
+		</div><!--/.container-->
+
+	</div><!--/.page-content-->
 
 
-	<nav class="navbar-fixed-bottom" role="navigation">
+	<nav class="navbar-fixed-bottom white-bkgrd" role="navigation">
 		<a href="listings.html" id="menu">
 			<button id="home" type="button" class="nav-button btn btn-large" aria-hidden="true">
 				<i class="glyphicon glyphicon-menu-hamburger"></i>
@@ -59,15 +56,15 @@
 				<i class="glyphicon glyphicon-search"></i>
 			</button>
 		</a>
-	    <a href="user.html" id="profile">
-	    	<button id="user" type="button" class="nav-button btn btn-large" aria-hidden="true">
-	    		<i class="glyphicon glyphicon-user"></i>
-	    	</button>
-	    </a>
+		<a href="user.html" id="profile">
+			<button id="user" type="button" class="nav-button btn btn-large" aria-hidden="true">
+				<i class="glyphicon glyphicon-user"></i>
+			</button>
+		</a>
 	</nav>
 
 	<script language="javascript" type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script language="javascript" type="text/javascript" src="js/custom.js"></script>
+	<script language="javascript" type="text/javascript" src="js/custom.js"></script>
 	<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 

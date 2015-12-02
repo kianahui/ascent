@@ -106,6 +106,12 @@ hr {
 }
 
 
+.page-content {
+	padding-top: 5.5em;
+	padding-bottom: 6em;
+}
+
+
 /* For bottom sticky buttons */
 a.bottom-btn {
 	display: block;
@@ -159,14 +165,16 @@ button#home, button#search {
 	border-right: 1px solid #f1f1f1;
 }
 
+h4.nav-title {
+	font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
 
 /* =======================
  *   GIG LISTING PAGE
  * =======================
  */
-.gigs {
-	padding-top: 5.25em;
-}
 .gig-posting {
 	background-color: #434654;
 	margin-bottom: 1em;
