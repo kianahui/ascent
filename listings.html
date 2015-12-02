@@ -21,11 +21,37 @@
 <body onload="setDivs()">
 	<div class="container">
 		<div class="navbar-fixed-top white-bkgrd">
-			<h4>Ascent<!--<span>in Opportunities.</span>--></h4>
+			<h4>Ascent</h4>
 		</div>
 		<div class="gigs">
+
 			<div class="gig-posting">
-				<div class="navy-bkgrd pointer" onclick="$('#content-1').toggle(300);">
+				<div class="blue-bkgrd pointer" onclick="$('#content-2').toggle(400);">
+					<img src="img/guitarGig.jpg" style="width: 100%">
+					<div class="gig-text">
+						<h3 class="gig-title">Music Gig</h3>
+						<h5><a class="company" href="http://www.thegrovesf.com/">The Grove</a> | Coffee Shop</h5>
+						<p>Play music? Keep our cafe lively with some background jams. Coffee and meal on us!</p>
+					</div>
+				</div>
+				<div id="content-2" class="blue-bkgrd">
+					<div class="gig-text">
+						<p>
+							<strong>Compensation:</strong> TBD
+							<br>
+							<strong>Time:</strong> 1-2 hours
+							<br>
+						</p>
+					</div>
+					<div class="button-wrapper text-center">
+						<button class="btn btn-primary interested">Interested</button>
+						<button class="btn btn-primary action" data-toggle="modal" data-target="#myModal">Contact Now</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="gig-posting">
+				<div class="yellow-bkgrd pointer" onclick="$('#content-1').toggle(300);">
 					<img src="img/hands-laptop.jpg" style="width: 100%">
 					<div class="gig-text">
 						<h3 class="gig-title">Design a Website</h3>
@@ -33,10 +59,40 @@
 						<p>We're looking for an eager individual to help us create an online site.</p>
 					</div>
 				</div>
-				<div id="content-1" class="navy-bkgrd">
+				<div id="content-1" class="yellow-bkgrd">
 					<div class="gig-text">
-						<strong>Compensation:</strong> TBD<br>
-						<strong>Time:</strong> 20 hours<br>
+						<p>
+							<strong>Compensation:</strong> TBD
+							<br>
+							<strong>Time:</strong> 20 hours
+							<br>
+						</p>
+					</div>
+					<div class="button-wrapper text-center">
+						<button class="btn btn-primary interested">Interested</button>
+						<button class="btn btn-primary action" data-toggle="modal" data-target="#myModal">Contact Now</button>
+					</div>
+				</div>
+			</div><!--/.gig-posting-->
+
+
+			<div class="gig-posting">
+				<div class="seafoam-bkgrd pointer" onclick="$('#content-3').toggle(300);">
+					<img src="img/flyers.jpg" style="width: 100%">
+					<div class="gig-text">
+						<h3 class="gig-title">Create a Flyer</h3>
+						<h5><a class="company" href="">company</a> | type</h5>
+						<p>Can you draw? Design? Use canva.com? Come help us create a flyer for a bake sale!</p>
+					</div>
+				</div>
+				<div id="content-3" class="seafoam-bkgrd">
+					<div class="gig-text">
+						<p>
+							<strong>Compensation:</strong> TBD
+							<br>
+							<strong>Time:</strong> 2 hours
+							<br>
+						</p>
 					</div>
 					<div class="button-wrapper text-center">
 						<button class="btn btn-primary interested">Interested</button>
@@ -46,33 +102,30 @@
 			</div><!--/.gig-posting-->
 
 			<div class="gig-posting">
-				<div class="seafoam-bkgrd pointer" onclick="$('#content-2').toggle(400);">
-					<img src="img/guitarGig.jpg" style="width: 100%">
+				<div class="orange-bkgrd pointer" onclick="$('#content-4').toggle(300);">
+					<img src="img/soundroom.jpg" style="width: 100%">
 					<div class="gig-text">
-						<h3 class="gig-title">Music Gig</h3>
-						<h5><a class="company" href="http://www.thegrovesf.com/">The Grove</a> | Coffee Shop</h5>
-						<p>Play music? Keep our cafe lively with some background jams. Coffee and meal on us!</p>
+						<h3 class="gig-title">Jazz Music Gig</h3>
+						<h5><a class="company" href="http://www.soundroom.org">The Sound Room (BAJA) </a> | Nonprofit</h5>
+						<p>Can you play Jazz music on an instrument? We'd love to have you!</p>
 					</div>
 				</div>
-				<div id="content-2" class="seafoam-bkgrd">
+				<div id="content-4" class="orange-bkgrd">
 					<div class="gig-text">
-						<strong>Compensation:</strong> TBD<br>
-						<strong>Time:</strong> 1-2 hours<br>
+						<p>Bay Area Jazz and Arts nurtures music, art, and creative ventures through live performance and educational programs.</p>
+						<p>
+							<strong>Compensation:</strong> TBD
+							<br>
+							<strong>Time:</strong> x hours
+							<br>
+						</p>
 					</div>
 					<div class="button-wrapper text-center">
 						<button class="btn btn-primary interested">Interested</button>
 						<button class="btn btn-primary action" data-toggle="modal" data-target="#myModal">Contact Now</button>
 					</div>
 				</div>
-			</div>
-
-			<div class="gig-posting">
-				<div class="gig-text">
-					<h3 class="gig-title">Create a Flyer</h3>
-					<p>Local small business needs a well-designed flyer to announce upcoming sale. </p>
-					<button class="btn btn-primary">I'm interested!</button>
-				</div>
-			</div>
+			</div><!--/.gig-posting-->
 
 		</div>
 	</div>
