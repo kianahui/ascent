@@ -33,7 +33,6 @@ h2 {
 	margin: 1em 0 0.5em 0;
 	text-transform: uppercase;
 	text-align: center;
-	color: #252525;
 }
 
 h2 span {
@@ -99,6 +98,18 @@ hr {
 
 .pointer {
 	cursor: pointer;
+}
+
+
+/* For bottom sticky buttons */
+a.bottom-btn {
+	display: block;
+	width: 100%;
+	font-size: 1.25em;
+}
+a.bottom-btn button {
+	width: 100%;
+	padding: 0.75em 0;
 }
 
 
