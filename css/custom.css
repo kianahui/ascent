@@ -13,7 +13,7 @@ body {
 	font-size: 1.25em;
 	letter-spacing: 0.5px;
 	color: #e7e7e7;
-	background-color: #242631;
+	background-color: #2a2a2a;
 	font-family: 'Nunito', 'Century Gothic', sans-serif;
 /*	font-family: 'TexGyreAdventor', 'Century Gothic', sans-serif;
 */}
@@ -28,10 +28,12 @@ h1 {
 }
 
 h2 {
-	font-size: 2.25em;
-	line-height: 1.35em;
+	font-size: 1.75em;
+	line-height: 1em;
+	margin: 1em 0 0.5em 0;
 	text-transform: uppercase;
 	text-align: center;
+	color: #444651;
 }
 
 h2 span {
@@ -43,7 +45,8 @@ h3 {
 }
 
 hr {
-	border-color: #606583;
+	border-color: #e64f6e;
+	margin: 0.5em 0em;
 }
 
 
@@ -63,6 +66,18 @@ hr {
 }
 
 
+/* background colors */
+.slate-gray-bkgrd {
+	background-color: #444651;
+}
+.white-bkgrd {
+	background-color: #f1f1f1;
+}
+.pink-bkgrd {
+	background-color: #f65f7e;
+}
+
+
 
 
 
@@ -71,7 +86,6 @@ hr {
  * =====================
  */
  nav {
-	background-color: #f1f1f1;
 	border-top: 1px solid #e0e0e0;
 	height: 4em;
 }
@@ -105,6 +119,9 @@ button#home, button#search {
  *   GIG LISTING PAGE
  * =======================
  */
+.gigs {
+	padding-top: 6em;
+}
 .gig-posting {
 	background-color: #434654;
 	margin-bottom: 4em;
@@ -118,11 +135,10 @@ button#home, button#search {
 
 .gig-title {
 	cursor: pointer;
-	background-color: #f65f7e;
-	padding: 10px;
+	padding: 1em 0 0.25em 0;
 	border-radius: 2px;
-	margin-top: 0.5em;
-
+	/*margin-top: 0.5em;*/
+	margin: 0em;
 	transition: all ease-in-out 0.2s;
 	-webkit-transition: all ease-in-out 0.2s;
 	-moz-transition: all ease-in-out 0.2s;
@@ -133,7 +149,7 @@ button#home, button#search {
 }
 
 .gig-text {
-	padding: 0.5em;
+	padding: 0 0.75em 0.5em 0.75em;
 }
 
 .top-margin {
