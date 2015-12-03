@@ -56,124 +56,126 @@
 </head>
 
 <body onload="setPages()">
-	<div class="navbar-fixed-top white-bkgrd text-center">
-		<h4 class="nav-title">Laura Carlton</h4>
-	</div>
-
-	<div class="page-content">
-		<ul class="nav nav-tabs">
-			<li role="presentation" id="basic-info-tab" class="active"><a href="#">Basic Info</a></li>
-			<li role="presentation" id="saved-tab"><a href="#">Saved</a></li>
-			<li role="presentation" id="history-tab"><a href="#">History</a></li>
-		</ul>
-
-		<div class="container">
-			<div id="basic-info" class="top-margin">
-				<img src="img/user-placeholder.png" class="img-responsive center-block" id="profile-img">
-				<div class="row top-margin">
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4"><strong>FIRST</strong></div>
-					<div class="col-xs-6">Laura</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4"><strong>LAST</strong></div>
-					<div class="col-xs-6">Carlton</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4"><strong>E-MAIL</strong></div>
-					<div class="col-xs-6">carlton1@gmail.com</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4"><strong>EDUCATION</strong></div>
-					<div class="col-xs-6">Certain High School</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4"><strong>BIRTH</strong></div>
-					<div class="col-xs-6">November 01, 2001</div>
-				</div>
+	<div id="background">
+		<div class="navbar-fixed-top white-bkgrd text-center">
+			<h4 class="nav-title">Laura Carlton</h4>
 		</div>
 
-		<div id="saved">
-			<div class="gig-posting">
-				<div class="blue-bkgrd pointer" onclick="$('#content-2').toggle(400);">
-					<img src="img/guitarGig.jpg" style="width: 100%">
-					<div class="gig-text">
-						<h3 class="gig-title">Music Gig</h3>
-						<h5><a class="company" href="http://www.thegrovesf.com/">The Grove</a> | Coffee Shop</h5>
-						<p>Play music? Keep our cafe lively with some background jams. Coffee and meal on us!</p>
-					</div>
-				</div>
-				<div id="content-2" class="blue-bkgrd">
-					<div class="gig-text">
-						<p>
-							<strong>Compensation:</strong> TBD
-							<br>
-							<strong>Time:</strong> 1-2 hours
-							<br>
-						</p>
-					</div>
-					<div class="button-wrapper text-center">
-						<button class="btn btn-primary remove-saved">Remove from Saved</button>
-						<button class="btn btn-primary action" data-toggle="modal" data-target="#myModal">Contact Now</button>
-					</div>
-				</div>
-			</div>
+		<div class="page-content">
+			<ul class="nav nav-tabs">
+				<li role="presentation" id="basic-info-tab" class="active"><a href="#">Basic Info</a></li>
+				<li role="presentation" id="saved-tab"><a href="#">Saved</a></li>
+				<li role="presentation" id="history-tab"><a href="#">History</a></li>
+			</ul>
 
-		</div>
+			<div class="container">
+				<div id="basic-info" class="top-margin">
+					<img src="img/user-placeholder.png" class="img-responsive center-block" id="profile-img">
+					<div class="row top-margin">
+						<div class="col-xs-2"></div>
+						<div class="col-xs-4"><strong>FIRST</strong></div>
+						<div class="col-xs-6">Laura</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2"></div>
+						<div class="col-xs-4"><strong>LAST</strong></div>
+						<div class="col-xs-6">Carlton</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2"></div>
+						<div class="col-xs-4"><strong>E-MAIL</strong></div>
+						<div class="col-xs-6">carlton1@gmail.com</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2"></div>
+						<div class="col-xs-4"><strong>EDUCATION</strong></div>
+						<div class="col-xs-6">Certain High School</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2"></div>
+						<div class="col-xs-4"><strong>BIRTH</strong></div>
+						<div class="col-xs-6">November 01, 2001</div>
+					</div>
+				</div>
 
-	<div id="history">
-		<div class="gig-posting">
-			<div class="yellow-bkgrd pointer" onclick="$('#content-1').toggle(300);">
-				<img src="img/hands-laptop.jpg" style="width: 100%">
-				<div class="gig-text">
-					<h3 class="gig-title">Design a Website</h3>
-					<h5><a class="company" href="https://www.dance4life.com">dance4life</a> | Nonprofit</h5>
-					<p>We're looking for an eager individual to help us create an online site.</p>
+				<div id="saved">
+					<div class="gig-posting">
+						<div class="blue-bkgrd pointer" onclick="$('#content-2').toggle(400);">
+							<img src="img/guitarGig.jpg" style="width: 100%">
+							<div class="gig-text">
+								<h3 class="gig-title">Music Gig</h3>
+								<h5><a class="company" href="http://www.thegrovesf.com/">The Grove</a> | Coffee Shop</h5>
+								<p>Play music? Keep our cafe lively with some background jams. Coffee and meal on us!</p>
+							</div>
+						</div>
+						<div id="content-2" class="blue-bkgrd">
+							<div class="gig-text">
+								<p>
+									<strong>Compensation:</strong> TBD
+									<br>
+									<strong>Time:</strong> 1-2 hours
+									<br>
+								</p>
+							</div>
+							<div class="button-wrapper text-center">
+								<button class="btn btn-primary remove-saved">Remove from Saved</button>
+								<button class="btn btn-primary action" data-toggle="modal" data-target="#myModal">Contact Now</button>
+							</div>
+						</div>
+					</div>
+
 				</div>
-			</div>
-			<div id="content-1" class="yellow-bkgrd">
-				<div class="gig-text">
-					<p>
-						<strong>Compensation:</strong> $300
-						<br>
-						<strong>Time:</strong> 20 hours
-						<br>
-					</p>
+
+				<div id="history">
+					<div class="gig-posting">
+						<div class="yellow-bkgrd pointer" onclick="$('#content-1').toggle(300);">
+							<img src="img/hands-laptop.jpg" style="width: 100%">
+							<div class="gig-text">
+								<h3 class="gig-title">Design a Website</h3>
+								<h5><a class="company" href="https://www.dance4life.com">dance4life</a> | Nonprofit</h5>
+								<p>We're looking for an eager individual to help us create an online site.</p>
+							</div>
+						</div>
+						<div id="content-1" class="yellow-bkgrd">
+							<div class="gig-text">
+								<p>
+									<strong>Compensation:</strong> $300
+									<br>
+									<strong>Time:</strong> 20 hours
+									<br>
+								</p>
+							</div>
+						</div>
+					</div><!--/.gig-posting-->
 				</div>
-			</div>
-		</div><!--/.gig-posting-->
+
+			</div><!--/.container-->
+
+		</div><!--/.page-content-->
+
+
+		<nav class="navbar-fixed-bottom white-bkgrd" role="navigation">
+			<a href="listings.html" id="menu">
+				<button id="home" type="button" class="nav-button btn btn-large" aria-hidden="true">
+					<i class="glyphicon glyphicon-menu-hamburger"></i>
+				</button>
+			</a>
+			<a href="search.html" id="search">
+				<button id="explore" type="button" class="nav-button btn btn-large" aria-hidden="true">
+					<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</a>
+			<a href="" id="profile">
+				<button id="user" type="button" class="nav-button btn btn-large" aria-hidden="true">
+					<i class="glyphicon glyphicon-user"></i>
+				</button>
+			</a>
+		</nav>
 	</div>
 
-</div><!--/.container-->
-
-</div><!--/.page-content-->
-
-
-<nav class="navbar-fixed-bottom white-bkgrd" role="navigation">
-	<a href="listings.html" id="menu">
-		<button id="home" type="button" class="nav-button btn btn-large" aria-hidden="true">
-			<i class="glyphicon glyphicon-menu-hamburger"></i>
-		</button>
-	</a>
-	<a href="search.html" id="search">
-		<button id="explore" type="button" class="nav-button btn btn-large" aria-hidden="true">
-			<i class="glyphicon glyphicon-search"></i>
-		</button>
-	</a>
-	<a href="" id="profile">
-		<button id="user" type="button" class="nav-button btn btn-large" aria-hidden="true">
-			<i class="glyphicon glyphicon-user"></i>
-		</button>
-	</a>
-</nav>
-
-<script language="javascript" type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script language="javascript" type="text/javascript" src="js/custom.js"></script>
-<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/custom.js"></script>
+	<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
