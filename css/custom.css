@@ -131,6 +131,8 @@ a.bottom-btn button {
 	width: 100%;
 	padding: 0.75em 0;
 	color: #E07400;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
 }
 a.bottom-btn button:active {
 	color: #E07400;
