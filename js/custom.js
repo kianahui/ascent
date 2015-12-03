@@ -3,6 +3,11 @@ $(this).text('Saved');
 	$(this).addClass('disabled');
 });
 
+$('.remove-saved').click(function(){
+$(this).text('Removed from Saved');
+	$(this).addClass('disabled');
+});
+
 
 /* ==============================
  *  Requested Alert for Listings 
@@ -12,7 +17,8 @@ $('.action').click(function() {
 	var contact = this;
 	$('#send').click(function() {
 		$(contact).text('Contacted!');
-		contact.style.backgroundColor = '#797979';
+		contact.style.backgroundColor = '#c9c9c9';
+		contact.style.color = 'rgb(225, 114, 39)'
 		contact.removeAttribute("data-toggle");
 	});
 });

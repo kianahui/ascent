@@ -66,7 +66,7 @@
     "@btn-default-bg": "#fff",
     "@btn-default-border": "#ccc",
     "@btn-primary-color": "#fff",
-    "@btn-primary-bg": "#35fcf9",
+    "@btn-primary-bg": "#c4c4c4",
     "@btn-primary-border": "darken(@btn-primary-bg, 5%)",
     "@btn-success-color": "#fff",
     "@btn-success-bg": "#21dd2d",
