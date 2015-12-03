@@ -10,6 +10,10 @@
 
 
 	<style>
+	.transparent {
+		opacity: 0.85;
+		filter: alpha(opacity=85);
+	}
 	#interest-content {
 		padding-top: 0.5em;
 		padding-bottom: 2em;
@@ -29,85 +33,83 @@
 		font-size: 1em;
 	}
 
-
-	@media (min-width: 768px) {
-	}
-
 	</style>
 </head>
 
 <body>
 	<div id="background">
-		<div class="container text-center">
-			<section id="interest-content">
-				<h2>Ignite<span> your Interests.</span></h2>
-				<p id="description">Tell us more about yourself so that we can connect you to the right opportunities.</p>
-				<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
-					<div class="interest-grid">
-						<div class="row">
-							<div class="checkbox seafoam-bkgrd">
-								<div class="table">
-									<h3 class="cell">html</h3>
+		<div class="transparent">
+			<div class="container text-center">
+				<section id="interest-content">
+					<h2>Ignite<span> your Interests.</span></h2>
+					<p id="description">Tell us more about yourself so that we can connect you to the right opportunities.</p>
+					<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
+						<div class="interest-grid">
+							<div class="row">
+								<div class="checkbox seafoam-bkgrd">
+									<div class="table">
+										<h3 class="cell">html</h3>
+									</div>
+									<input id="cb1" name="cb6" type="checkbox">
+									<label for="cb1"></label>
 								</div>
-								<input id="cb1" name="cb6" type="checkbox">
-								<label for="cb1"></label>
-							</div>
-							<div class="checkbox blue-bkgrd">
-								<div class="table">
-									<h3 class="cell">design</h3>
+								<div class="checkbox blue-bkgrd">
+									<div class="table">
+										<h3 class="cell">design</h3>
+									</div>
+									<input type="checkbox" id="cb2" name="cb2" />
+									<label for="cb2"></label>
 								</div>
-								<input type="checkbox" id="cb2" name="cb2" />
-								<label for="cb2"></label>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="checkbox yellow-bkgrd">
-								<div class="table">
-									<h3 class="cell">drawing</h3>
-								</div>
-									<input type="checkbox" id="cb3" name="cb3" />
-									<label for="cb3"></label>
 							</div>
 
-							<div class="checkbox orange-bkgrd">
-								<div class="table">
-									<h3 class="cell">teaching</h3>
+							<div class="row">
+								<div class="checkbox yellow-bkgrd">
+									<div class="table">
+										<h3 class="cell">drawing</h3>
+									</div>
+										<input type="checkbox" id="cb3" name="cb3" />
+										<label for="cb3"></label>
 								</div>
-								<input type="checkbox" id="cb4" name="cb4" />
-								<label for="cb4"></label>
-							</div>
-						</div>
 
-						<div class="row">
-							<div class="checkbox blue-bkgrd">
-								<div class="table">
-									<h3 class="cell">music</h3>
+								<div class="checkbox orange-bkgrd">
+									<div class="table">
+										<h3 class="cell">teaching</h3>
+									</div>
+									<input type="checkbox" id="cb4" name="cb4" />
+									<label for="cb4"></label>
 								</div>
-								<input type="checkbox" id="cb5" name="cb5" />
-								<label for="cb5"></label>
 							</div>
 
-							<div class="checkbox seafoam-bkgrd">
-								<div class="table">
-									<h3 class="cell">dance</h3>
+							<div class="row">
+								<div class="checkbox blue-bkgrd">
+									<div class="table">
+										<h3 class="cell">music</h3>
+									</div>
+									<input type="checkbox" id="cb5" name="cb5" />
+									<label for="cb5"></label>
 								</div>
-								<input type="checkbox" id="cb6" name="cb6" />
-								<label for="cb6"></label>
+
+								<div class="checkbox seafoam-bkgrd">
+									<div class="table">
+										<h3 class="cell">dance</h3>
+									</div>
+									<input type="checkbox" id="cb6" name="cb6" />
+									<label for="cb6"></label>
+								</div>
 							</div>
-						</div>
 
 
-						<p>Interests not listed? Let us know!</p>
-						<input id="other" type="text" placeholder="Separate multiple with commas">
-					</div><!--/.interest-grid-->
-				</form>
-			</section>
+							<p>Interests not listed? Let us know!</p>
+							<input id="other" type="text" placeholder="Separate multiple with commas">
+						</div><!--/.interest-grid-->
+					</form>
+				</section>
 
-		</div><!--/.container-->
+			</div><!--/.container-->
+
+			<a class="bottom-btn" href="listings.html"><button id="submit" class="btn btn-large btn-primary">Continue</button></a>
+		</div>
 	</div>
-
-	<a class="bottom-btn" href="listings.html"><button id="submit" class="btn btn-large btn-primary">Continue</button></a>
 
 	<script src="js/svgcheckbx.js"></script>
 
