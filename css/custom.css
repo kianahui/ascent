@@ -89,22 +89,22 @@ hr {
 
 /* colors */
 .white-bkgrd {
-	background-color: #f1f1f1;
+	background-color: rgba(241, 241, 241, 0.97);
 }
 .blue-bkgrd {
-	background-color: #1b85b8;
+	background-color: #1b85c7;
 }
 .seafoam-bkgrd {
-	background-color: #559e83;
+	background-color: #55ad83;
 }
 .yellow-bkgrd {
-	background-color: #a09b51;
+	background-color: #aF9b51;
 }
 .orange-bkgrd {
-	background-color: #E07400;
+	background-color: #EF7400;
 }
 .purple-bkgrd {
-	background-color: #60525c;
+	background-color: #6F526b;
 }
 
 
@@ -190,6 +190,8 @@ h4.nav-title {
 	background-color: #434654;
 	margin-bottom: 1em;
 	border-radius: 2px;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
 }
 
 .gig-title {
