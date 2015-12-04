@@ -54,6 +54,6 @@ function setPages(){
 	$('#history').hide();
 };
 
-/*function setDivs() {
+function setDivs() {
 	$('.extra-info').hide();
-}*/
+}
